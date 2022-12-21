@@ -175,12 +175,13 @@
  							content: '云函数正在上传中或者上传有误，请稍候',
  							showCancel: false
  						});
- 					} else
- 						wx.showModal({
- 							title: '',
- 							content: '网络故障，请稍后重试',
- 							showCancel: false
- 						});
+           }
+            // else
+ 						// wx.showModal({
+ 						// 	title: '',
+ 						// 	content: '网络故障，请稍后重试',
+ 						// 	showCancel: false
+ 						// });
  				}
  				reject(err.result);
  				return;

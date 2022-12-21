@@ -7,7 +7,8 @@
 		"projects/A00/meet/index/meet_index",
 		"projects/A00/meet/join/meet_join",
 		"projects/A00/meet/detail/meet_detail",
-		"projects/A00/meet/self/meet_self",
+    "projects/A00/meet/self/meet_self",
+    "projects/A00/message/message/message_list",
 		"projects/A00/my/index/my_index",
 		"projects/A00/my/edit/my_edit",
 		"projects/A00/my/join/my_join",
@@ -65,19 +66,19 @@
 			},
 			{
 				"pagePath": "projects/A00/news/cate1/news_cate1",
-				"text": "本馆动态",
+				"text": "活动",
 				"iconPath": "/projects/A00/skin/images/tabbar/cate1.png",
 				"selectedIconPath": "/projects/A00/skin/images/tabbar/cate1_cur.png"
 			},
 			{
-				"pagePath": "projects/A00/news/cate2/news_cate2",
-				"text": "新书来了",
-				"iconPath": "/projects/A00/skin/images/tabbar/cate2.png",
-				"selectedIconPath": "/projects/A00/skin/images/tabbar/cate2_cur.png"
-			},
-			{
 				"pagePath": "projects/A00/calendar/index/calendar_index",
-				"text": "活动日历",
+				"text": "订单",
+				"iconPath": "/projects/A00/skin/images/tabbar/day.png",
+				"selectedIconPath": "/projects/A00/skin/images/tabbar/day_cur.png"
+      },
+      {
+				"pagePath": "projects/A00/message/message/message_list",
+				"text": "消息",
 				"iconPath": "/projects/A00/skin/images/tabbar/day.png",
 				"selectedIconPath": "/projects/A00/skin/images/tabbar/day_cur.png"
 			},
