@@ -8,7 +8,7 @@ module.exports = {
 	'home/setup_all': 'home_controller@getSetupAll', //获取全局配置(所有)
 
 	'passport/phone': 'passport_controller@getPhone',
-	'passport/my_detail': 'passport_controller@getMyDetail',
+	'passport/personal_center_detail': 'passport_controller@getMyDetail',
 	'passport/edit_base': 'passport_controller@editBase',
 
 	'news/list': 'news_controller@getNewsList',
@@ -23,11 +23,11 @@ module.exports = {
 	'meet/before_join': 'meet_controller@beforeJoin',
 	'meet/join': 'meet_controller@join',
 
-	'my/my_join_list': 'meet_controller@getMyJoinList',
-	'my/my_join_cancel': 'meet_controller@cancelMyJoin',
-	'my/my_join_detail': 'meet_controller@getMyJoinDetail',
-	'my/my_join_someday': 'meet_controller@getMyJoinSomeday',
-	'my/my_join_checkin': 'meet_controller@userSelfCheckin', 
+	'my/personal_center_join_list': 'meet_controller@getMyJoinList',
+	'my/personal_center_join_cancel': 'meet_controller@cancelMyJoin',
+	'my/personal_center_join_detail': 'meet_controller@getMyJoinDetail',
+	'my/personal_center_join_someday': 'meet_controller@getMyJoinSomeday',
+	'my/personal_center_join_checkin': 'meet_controller@userSelfCheckin', 
 
 	'test/test': 'test/test_controller@test',
 	'test/meet_test_join': 'test/test_meet_controller@testJoin',

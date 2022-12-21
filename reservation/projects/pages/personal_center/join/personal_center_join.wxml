@@ -1,0 +1,2 @@
+<import src="../../../../tpls/project/personal_center_join_tpl.wxml" />
+<template is="myJoinTpl" data="{{skin,sortItems,sortMenus,dataList,search,isTotalMenu:true}}" />

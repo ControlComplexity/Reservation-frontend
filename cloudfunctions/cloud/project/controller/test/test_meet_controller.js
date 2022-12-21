@@ -23,7 +23,7 @@ class TestController {
 		let meetService = new MeetService();
 		let userId = 'obytx5EuMzFj-rC7t3x8PY5S3GHs';
 		let meetId = '617ef50c620ab4160556a8537944a517';
-		global.PID = 'A00'
+		global.PID = 'pages'
 		let timeMark = 'T20220215AAABCAUSBXXMH';
 		let admin = null;
 
@@ -35,7 +35,7 @@ class TestController {
 		return;
 		let serviceAdmin = new AdminMeetService();
 
-		global.PID = 'A00'
+		global.PID = 'pages'
 		//	this.setMeetDaysAndTimes();
 		await this.multiInsertJoin();
 
@@ -56,7 +56,7 @@ class TestController {
 
 		let userId = 'obytx5EuMzFj-rC7t3x8PY5S3GHs';
 		let meetId = '617ef50c61fb411f02e81edc03e24013';
-		global.PID = 'A00'
+		global.PID = 'pages'
 		let timeMark = 'T20220205AAAPKZBBVIRTV';
 		let admin = null;
 
