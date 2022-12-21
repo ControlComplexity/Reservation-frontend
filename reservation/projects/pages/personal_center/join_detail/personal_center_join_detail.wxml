@@ -1,2 +1,0 @@
-<import src="../../../../tpls/project/personal_center_join_detail_tpl.wxml" />
-<template is="myJoinDetailTpl" data="{{skin,id,isLoad,isShowHome,join,qrImageData}}" />

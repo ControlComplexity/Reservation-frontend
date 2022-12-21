@@ -1,82 +1,66 @@
-const AdminBiz = require('../../../../biz/admin_biz.js');
-const pageHelper = require('../../../../helper/page_helper.js');
-const cloudHelper = require('../../../../helper/cloud_helper.js');
-
+// pages/admin/setup/qr/admin_setup_qr.js
 Page({
 
-	/**
-	 * 页面的初始数据
-	 */
-	data: {
-		isLoad: false,
-		qrUrl: '',
-	},
+  /**
+   * 页面的初始数据
+   */
+  data: {
 
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
-	onLoad: async function (options) { 
-		if (!AdminBiz.isAdmin(this)) return; 
-		await this._loadDetail();
-	},
+  },
 
-	_loadDetail: async function () {   
-		let params = {  
-		};
-		let opt = {
-			title: 'bar'
-		};
-		try {
-			await cloudHelper.callCloudSumbit('admin/setup_qr', params, opt).then(res => {
-				this.setData({
-					qrUrl: res.data,
-					isLoad: true
-				})
-			});
-		} catch (err) {
-			console.error(err);
-		}
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad(options) {
 
-	},
+  },
 
-	/**
-	 * 生命周期函数--监听页面初次渲染完成
-	 */
-	onReady: function () {
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
 
-	},
+  },
 
-	/**
-	 * 生命周期函数--监听页面显示
-	 */
-	onShow: function () {
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
 
-	},
+  },
 
-	/**
-	 * 生命周期函数--监听页面隐藏
-	 */
-	onHide: function () {
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide() {
 
-	},
+  },
 
-	/**
-	 * 生命周期函数--监听页面卸载
-	 */
-	onUnload: function () {
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload() {
 
-	},
+  },
 
-	/**
-	 * 页面相关事件处理函数--监听用户下拉动作
-	 */
-	onPullDownRefresh: async function () {
-		await this._loadDetail();
-		wx.stopPullDownRefresh();
-	},
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh() {
 
-	url: function (e) {
-		pageHelper.url(e, this);
-	}
+  },
 
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom() {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage() {
+
+  }
 })

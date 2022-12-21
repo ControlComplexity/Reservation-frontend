@@ -1,94 +1,66 @@
-const AdminBiz = require('../../../../biz/admin_biz.js');
-const pageHelper = require('../../../../helper/page_helper.js'); 
-const cloudHelper = require('../../../../helper/cloud_helper.js'); 
-
-
+// pages/admin/meet/scan/admin_meet_scan.js
 Page({
 
-	/**
-	 * 页面的初始数据
-	 */
-	data: {
-		isLoad: true,
-		title: '',
-	},
+  /**
+   * 页面的初始数据
+   */
+  data: {
 
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
-	onLoad: function (options) {
-		if (!AdminBiz.isAdmin(this)) return;
+  },
 
-		if (!pageHelper.getOptions(this, options, 'meetId')) return;
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad(options) {
 
-		if (options && options.title) {
-			let title = decodeURIComponent(options.title);
-			this.setData({
-				title
-			});
-		}
-	},
+  },
 
-	/**
-	 * 生命周期函数--监听页面初次渲染完成
-	 */
-	onReady: function () {
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
 
-	},
+  },
 
-	/**
-	 * 生命周期函数--监听页面显示
-	 */
-	onShow: function () {
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
 
-	},
+  },
 
-	/**
-	 * 生命周期函数--监听页面隐藏
-	 */
-	onHide: function () {
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide() {
 
-	},
+  },
 
-	/**
-	 * 生命周期函数--监听页面卸载
-	 */
-	onUnload: function () {
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload() {
 
-	},
+  },
 
-	bindScanTap: function (e) {
-		let meetId = this.data.meetId;
-		wx.scanCode({
-			async success(res) {
-				console.log(res)
-				if (!res ||
-					!res.result ||
-					!res.result.includes('meet=') ||
-					res.result.length != 20) {
-					pageHelper.showModal('错误的预约码，请重新扫码');
-					return;
-				}
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh() {
 
-				let code = res.result.replace('meet=', '');
-				let params = {
-					meetId,
-					code
-				};
-				let options = {
-					title: '预约码核销中'
-				}
-				await cloudHelper.callCloudSumbit('admin/join_scan', params, options).then(res => {
-					pageHelper.showModal('核销成功');
+  },
 
-				}).catch(err => {
-					console.log(err);
-				});
-			},
-			fail(err) {
-				if (err && err.errMsg == 'scanCode:fail')
-					pageHelper.showModal('预约码核销错误，请重新扫码');
-			}
-		});
-	}
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom() {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage() {
+
+  }
 })

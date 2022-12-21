@@ -1,2 +1,2 @@
-@import "style/comm/comm.wxss";
-@import "style/project/base/project.wxss"; 
+@import "pages/style/comm/comm.wxss";
+@import "pages/style/project/base/project.wxss"; 

@@ -1,5 +1,5 @@
 {
-  "miniprogramRoot": "miniprogram/",
+  "miniprogramRoot": "reservation/",
   "cloudfunctionRoot": "cloudfunctions/",
   "setting": {
     "urlCheck": true,
@@ -60,7 +60,7 @@
     }
   },
   "compileType": "miniprogram",
-  "srcMiniprogramRoot": "miniprogram/",
+  "srcMiniprogramRoot": "reservation/",
   "packOptions": {
     "ignore": [],
     "include": []

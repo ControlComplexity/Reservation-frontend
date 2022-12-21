@@ -1,62 +1,66 @@
-const AdminBiz = require('../../../../biz/admin_biz.js'); 
-const pageHelper = require('../../../../helper/page_helper.js'); 
-const PassportBiz = require('../../../../biz/passport_biz.js');
-
+// pages/admin/index/login/admin_login.js
 Page({
 
-	/**
-	 * 页面的初始数据
-	 */
-	data: {
-		name: '',
-		pwd: '',
-	},
+  /**
+   * 页面的初始数据
+   */
+  data: {
 
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
-	onLoad: function (options) {
-		AdminBiz.clearAdminToken();
-	},
+  },
 
-	/**
-	 * 生命周期函数--监听页面初次渲染完成
-	 */
-	onReady: function () {
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad(options) {
 
-	},
+  },
 
-	/**
-	 * 生命周期函数--监听页面显示
-	 */
-	onShow: function () {},
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
 
-	/**
-	 * 生命周期函数--监听页面隐藏
-	 */
-	onHide: function () {
+  },
 
-	},
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
 
-	/**
-	 * 生命周期函数--监听页面卸载
-	 */
-	onUnload: function () {
+  },
 
-	},
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide() {
 
-	url: function (e) {
-		pageHelper.url(e, this);
-	},
+  },
 
-	bindBackTap: function (e) {
-		wx.reLaunch({
-			url: pageHelper.fmtURLByPID('/pages/my/index/my_index'),
-		});
-	},
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload() {
 
-	bindLoginTap: async function (e) {
-		return PassportBiz.adminLogin(this.data.name, this.data.pwd, this);
-	}
+  },
 
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh() {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom() {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage() {
+
+  }
 })

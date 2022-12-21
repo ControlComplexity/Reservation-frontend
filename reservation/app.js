@@ -1,4 +1,4 @@
-const setting = require('./setting/setting.js');
+const setting = require('./pages/setting/setting.js');
 
 App({
 	onLaunch: function (options) {

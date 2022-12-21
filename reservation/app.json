@@ -1,50 +1,15 @@
 {
 	"pages": [
-		"projects/pages/default/index/default_index",
-		"projects/pages/about/index/about_index",
-		"projects/pages/about/contact/about_contact",
-		"projects/pages/calendar/index/calendar_index",
-		"projects/pages/meet/index/meet_index",
-		"projects/pages/meet/join/meet_join",
-		"projects/pages/meet/detail/meet_detail",
-    "projects/pages/meet/self/meet_self",
-    "projects/pages/message/message/message_list",
-		"projects/pages/personal_center/index/personal_center_index",
-		"projects/pages/personal_center/edit/personal_center_edit",
-		"projects/pages/personal_center/join/personal_center_join",
-		"projects/pages/personal_center/join_detail/personal_center_join_detail",
-		"projects/pages/news/index/news_index",
-		"projects/pages/news/detail/news_detail",
-		"projects/pages/news/cate1/news_cate1",
-		"projects/pages/news/cate2/news_cate2",
-		"projects/pages/search/search",
-
-		"cmpts/public/form/form_set/field/form_set_field",
-		"pages/admin/index/home/admin_home",
-		"pages/admin/index/login/admin_login",
-		"pages/admin/content/admin_content",
-		"pages/admin/meet/content/admin_meet_content",
-		"pages/admin/meet/cover/admin_meet_cover",
-		"pages/admin/meet/edit/admin_meet_edit",
-		"pages/admin/meet/export/admin_join_export",
-		"pages/admin/meet/join/admin_meet_join",
-		"pages/admin/meet/list/admin_meet_list",
-		"pages/admin/meet/record/admin_record_list",
-		"pages/admin/meet/scan/admin_meet_scan",
-		"pages/admin/meet/self/admin_meet_self",
-		"pages/admin/meet/temp/admin_temp_select",
-		"pages/admin/meet/time/admin_meet_time",
-		"pages/admin/mgr/log/admin_log_list",
-		"pages/admin/news/list/admin_news_list",
-		"pages/admin/news/add/admin_news_add",
-		"pages/admin/news/edit/admin_news_edit",
-		"pages/admin/news/content/admin_news_content",
-		"pages/admin/setup/about/admin_setup_about",
-		"pages/admin/setup/contact/admin_setup_contact",
-		"pages/admin/setup/qr/admin_setup_qr",
-		"pages/admin/user/list/admin_user_list",
-		"pages/admin/user/export/admin_user_export"
-
+    "pages/frontend/default/index/default_index",
+    "pages/frontend/calendar/index/calendar_index",
+    "pages/frontend/message/message/message_list",
+    "pages/frontend/news/cate1/news_cate1",
+    "pages/frontend/personal_center/index/personal_center_index",
+    "pages/frontend/personal_center/join/personal_center_join",
+    "pages/frontend/personal_center/edit/personal_center_edit",
+    "pages/frontend/about/index/about_index",
+    "pages/frontend/about/contact/about_contact",
+    "pages/admin/index/login/admin_login"
 	],
 	"window": {
 		"backgroundColor": "#f1f1f1",
@@ -59,34 +24,34 @@
 		"color": "#999999",
 		"selectedColor": "#ff4427",
 		"list": [{
-				"pagePath": "projects/pages/default/index/default_index",
+				"pagePath": "pages/frontend/default/index/default_index",
 				"text": "首页",
-				"iconPath": "/projects/pages/images/tabbar/home_grey.png",
-				"selectedIconPath": "/projects/pages/images/tabbar/home_red.png"
+				"iconPath": "pages/frontend/images/tab/home_grey.png",
+				"selectedIconPath": "pages/frontend/images/tab/home_red.png"
 			},
 			{
-				"pagePath": "projects/pages/news/cate1/news_cate1",
+				"pagePath": "pages/frontend/news/cate1/news_cate1",
 				"text": "活动",
-				"iconPath": "/projects/pages/images/tabbar/activity_grey.png",
-				"selectedIconPath": "/projects/pages/images/tabbar/activity_red.png"
+				"iconPath": "pages/frontend/images/tab/activity_grey.png",
+				"selectedIconPath": "pages/frontend/images/tab/activity_red.png"
 			},
 			{
-				"pagePath": "projects/pages/calendar/index/calendar_index",
+				"pagePath": "pages/frontend/calendar/index/calendar_index",
 				"text": "订单",
-				"iconPath": "/projects/pages/images/tabbar/day.png",
-				"selectedIconPath": "/projects/pages/images/tabbar/day_cur.png"
+				"iconPath": "pages/frontend/images/tab/day.png",
+				"selectedIconPath": "pages/frontend/images/tab/day_cur.png"
       },
       {
-				"pagePath": "projects/pages/message/message/message_list",
+				"pagePath": "pages/frontend/message/message/message_list",
 				"text": "消息",
-				"iconPath": "/projects/pages/images/tabbar/day.png",
-				"selectedIconPath": "/projects/pages/images/tabbar/day_cur.png"
+				"iconPath": "pages/frontend/images/tab/day.png",
+				"selectedIconPath": "pages/frontend/images/tab/day_cur.png"
 			},
 			{
-				"pagePath": "projects/pages/personal_center/index/personal_center_index",
+				"pagePath": "pages/frontend/personal_center/index/personal_center_index",
 				"text": "我的",
-				"iconPath": "/projects/pages/images/tabbar/personal_center_grey.png",
-				"selectedIconPath": "/projects/pages/images/tabbar/personal_center_red.png"
+				"iconPath": "pages/frontend/images/tab/personal_center_grey.png",
+				"selectedIconPath": "pages/frontend/images/tab/personal_center_red.png"
 			}
 		]
 	},
@@ -95,9 +60,9 @@
 		"weui": true
 	},
 	"usingComponents": {
-		"cmpt-comm-list": "/cmpts/public/list/comm_list_cmpt",
-		"cmpt-picker": "/cmpts/public/picker/picker_cmpt",
-		"cmpt-modal": "/cmpts/public/modal/modal_cmpt"
+		"cmpt-comm-list": "/pages/cmpts/public/list/comm_list_cmpt",
+		"cmpt-picker": "/pages/cmpts/public/picker/picker_cmpt",
+		"cmpt-modal": "/pages/cmpts/public/modal/modal_cmpt"
 	},
 	"sitemapLocation": "sitemap.json"
 }
