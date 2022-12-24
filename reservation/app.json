@@ -44,8 +44,8 @@
       {
 				"pagePath": "pages/frontend/message/message/message_list",
 				"text": "消息",
-				"iconPath": "pages/frontend/images/tab/day.png",
-				"selectedIconPath": "pages/frontend/images/tab/day_cur.png"
+				"iconPath": "pages/frontend/images/tab/message_grey.png",
+				"selectedIconPath": "pages/frontend/images/tab/message_red.png"
 			},
 			{
 				"pagePath": "pages/frontend/personal_center/index/personal_center_index",
